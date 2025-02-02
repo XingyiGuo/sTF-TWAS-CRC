@@ -3,10 +3,10 @@ library(Seurat)
 library(DESeq2)
 
 # Read data
-integrated <- readRDS(vumc_broad_integrated.rds")
+scRNA <- readRDS(scRNA.rds")
 
 # Pseudobulk the counts based on Sample ID and Sample Classification
-pseudo_seurat_obj <- AggregateExpression(integrated, assays = "RNA", return.seurat = T, group.by = c("HTAN.Specimen.ID", "Sample_Classification"))
+pseudo_seurat_obj <- AggregateExpression(scRNA, assays = "RNA", return.seurat = T, group.by = c("HTAN.Specimen.ID", "Sample_Classification"))
 tail(Cells(pseudo_seurat_obj))
 
 
