@@ -1,4 +1,4 @@
-setwd("/nobackup/sbcs/Chaoli/")
+setwd("/nobackup/sbcs/XXX/")
 library(Seurat)
 library(DESeq2)
 
