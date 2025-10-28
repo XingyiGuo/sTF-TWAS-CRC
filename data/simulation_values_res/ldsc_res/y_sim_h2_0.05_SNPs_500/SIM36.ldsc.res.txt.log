@@ -1,0 +1,40 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision/simulation_values_res/sim_y_values/beta1_1_h2_0.05_SNPs_500.sim_y/10M.SIM36.glm.logistic.hybrid.txt \
+--ref-ld-chr /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks/ldscores_sim500/ \
+--out /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision/simulation_values_res/ldsc_res/y_sim_h2_0.05_SNPs_500/SIM36.ldsc.res.txt \
+--w-ld-chr /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/eur_w_ld_chr/ 
+
+Beginning analysis at Mon Oct 27 09:51:30 2025
+Reading summary statistics from /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision/simulation_values_res/sim_y_values/beta1_1_h2_0.05_SNPs_500.sim_y/10M.SIM36.glm.logistic.hybrid.txt ...
+Read summary statistics for 9991229 SNPs.
+Reading reference panel LD Score from /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks/ldscores_sim500/[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 9991229 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/eur_w_ld_chr/[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1290028 SNPs.
+After merging with reference panel LD, 9991229 SNPs remain.
+After merging with regression SNP LD, 1274793 SNPs remain.
+Removed 0 SNPs with chi^2 > 80 (1274793 SNPs remain)
+Total Observed scale h2: 0.6318 (0.3522)
+Categories: SIM1L2_0 SIM2L2_0 SIM3L2_0 SIM4L2_0 SIM5L2_0 SIM6L2_0 SIM7L2_0 SIM8L2_0 SIM9L2_0 SIM10L2_0 SIM11L2_0 SIM12L2_0 SIM13L2_0 SIM14L2_0 SIM15L2_0 SIM16L2_0 SIM17L2_0 SIM18L2_0 SIM19L2_0 SIM20L2_0 SIM21L2_0 SIM22L2_0 SIM23L2_0 SIM24L2_0 SIM25L2_0 SIM26L2_0 SIM27L2_0 SIM28L2_0 SIM29L2_0 SIM30L2_0 SIM31L2_0 SIM32L2_0 SIM33L2_0 SIM34L2_0 SIM35L2_0 SIM36L2_0 SIM37L2_0 SIM38L2_0 SIM39L2_0 SIM40L2_0 SIM41L2_0 SIM42L2_0 SIM43L2_0 SIM44L2_0 SIM45L2_0 SIM46L2_0 SIM47L2_0 SIM48L2_0 SIM49L2_0 SIM50L2_0
+Observed scale h2: 0.0568 -0.0457 -0.046  -0.0869  0.0634  0.0071  0.0525  0.0044  0.0275 -0.0923  0.0166  0.004  -0.0164 -0.0422  0.0045 -0.0141  0.0631 -0.0024  0.0164  0.0133 -0.1587  0.1219  0.0204 -0.0053  0.097   0.1312  0.0027 -0.0136  0.0416 -0.0854  0.0687  0.0822  0.0285 -0.0301 -0.0164  0.11   -0.0121  0.105  -0.005  -0.0537 -0.035  -0.0043  0.0184  0.0302  0.0682 -0.0615  0.0451  0.0907 -0.0228  0.0905
+Observed scale h2 SE: 0.0628 0.0647 0.0518 0.0471 0.0621 0.0605 0.0551 0.0572 0.0598 0.0482 0.0599 0.0574 0.0499 0.0591 0.0548 0.0623 0.0527 0.0556 0.057  0.056  0.044  0.0685 0.0679 0.059  0.066  0.0578 0.055  0.0565 0.0597 0.0537 0.0609 0.0557 0.0699 0.0467 0.048  0.0617 0.0539 0.0623 0.051  0.0539 0.0507 0.0539 0.0604 0.0587 0.0679 0.0583 0.0608 0.0612 0.0584 0.0675
+Proportion of SNPs: 0.0202 0.02   0.0203 0.0208 0.0199 0.0194 0.0208 0.0197 0.0199 0.0191 0.0191 0.0196 0.0205 0.021  0.0198 0.0203 0.0187 0.0201 0.0202 0.02   0.0197 0.0199 0.0207 0.0216 0.0206 0.0201 0.0202 0.0191 0.0201 0.0202 0.0193 0.0195 0.0208 0.0189 0.0191 0.0203 0.0199 0.0184 0.0188 0.02   0.021  0.0206 0.0193 0.0197 0.0203 0.0199 0.0201 0.0205 0.022  0.0195
+Proportion of h2g: 0.09   -0.0724 -0.0727 -0.1376  0.1003  0.0112  0.0832  0.0069  0.0436 -0.1462  0.0262  0.0063 -0.0259 -0.0668  0.0072 -0.0223  0.0998 -0.0039  0.0259  0.0211 -0.2512  0.1929  0.0323 -0.0084  0.1535  0.2077  0.0042 -0.0215  0.0659 -0.1352  0.1087  0.1301  0.045  -0.0476 -0.026   0.1741 -0.0192  0.1662 -0.0079 -0.085  -0.0555 -0.0068  0.029   0.0478  0.108  -0.0973  0.0714  0.1435 -0.0361  0.1433
+Enrichment: 4.4511  -3.6169  -3.5869  -6.6076   5.0484   0.5781   4.0063   0.3497   2.1854  -7.6722   1.3714   0.3208  -1.2649  -3.1739   0.3626  -1.0997   5.3345  -0.1918   1.2806   1.0558 -12.7266   9.7059   1.5605  -0.3882   7.4424  10.3084   0.2084  -1.1267   3.2835  -6.6895   5.6272   6.6866   2.1625  -2.519   -1.3608   8.5546  -0.9644   9.0149  -0.4171  -4.25    -2.6374  -0.3292   1.503    2.4241   5.326   -4.8952   3.5456   7.0062  -1.6426   7.3362
+Coefficients: 1.9203e-04 -1.5604e-04 -1.5475e-04 -2.8507e-04  2.1780e-04  2.4940e-05  1.7284e-04  1.5087e-05  9.4283e-05 -3.3100e-04  5.9167e-05  1.3840e-05 -5.4573e-05 -1.3693e-04  1.5643e-05 -4.7445e-05  2.3015e-04 -8.2735e-06  5.5247e-05  4.5549e-05 -5.4906e-04  4.1874e-04  6.7324e-05 -1.6747e-05  3.2109e-04  4.4473e-04  8.9927e-06 -4.8611e-05  1.4166e-04 -2.8861e-04  2.4277e-04  2.8848e-04  9.3298e-05 -1.0868e-04 -5.8708e-05  3.6907e-04 -4.1607e-05  3.8893e-04 -1.7995e-05 -1.8336e-04 -1.1379e-04 -1.4203e-05  6.4844e-05  1.0458e-04  2.2978e-04 -2.1120e-04  1.5297e-04  3.0227e-04 -7.0866e-05  3.1651e-04
+Coefficient SE: 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002 0.0002
+Lambda GC: 1.0193
+Mean Chi^2: 1.0057
+Intercept: 0.9955 (0.0043)
+Ratio < 0 (usually indicates GC correction).
+Analysis finished at Mon Oct 27 09:55:37 2025
+Total time elapsed: 4.0m:7.21s

@@ -1,0 +1,56 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--out /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks//ldscores_null10000//4 \
+--bfile /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/1000G_EUR_Phase3_plink_hg38/1000G.EUR.QC.4 \
+--annot /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks//annots_null10000//4.annot.txt \
+--l2  \
+--ld-wind-kb 100.0 
+
+Beginning analysis at Sat Oct 25 20:30:00 2025
+Read list of 729546 SNPs from /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/1000G_EUR_Phase3_plink_hg38/1000G.EUR.QC.4.bim
+Read 1 annotations for 729546 SNPs from /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks//annots_null10000//4.annot.txt
+Read list of 489 individuals from /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/1000G_EUR_Phase3_plink_hg38/1000G.EUR.QC.4.fam
+Reading genotypes from /data/sbcs/GuoLab/backup/liq17/ref/Alkesgroup/1000G_EUR_Phase3_plink_hg38/1000G.EUR.QC.4.bed
+Estimating LD Score.
+Writing LD Scores for 729546 SNPs to /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks//ldscores_null10000//4.l2.ldscore.gz
+
+Summary of LD Scores in /data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision//84Tracks//ldscores_null10000//4.l2.ldscore.gz
+         MAF      L2
+mean  0.1491  0.0541
+std   0.1485  0.1905
+min   0.0051 -0.0134
+25%   0.0194  0.0000
+50%   0.0900  0.0000
+75%   0.2587  0.0061
+max   0.5000  2.6691
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.1133
+L2   0.1133  1.0000
+
+Annotation Correlation Matrix
+      SIM1
+SIM1   1.0
+
+Annotation Matrix Column Sums
+SIM1    556
+
+Summary of Annotation Matrix Row Sums
+count    729546.0000
+mean          0.0008
+std           0.0276
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Sat Oct 25 20:42:21 2025
+Total time elapsed: 12.0m:20.73s

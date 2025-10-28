@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=sim_y
+#SBATCH --job-name=y_sim_glm
 #SBATCH --error=%x-%j.error
 #SBATCH --out=%x-%j.out
 #SBATCH --mem=40G
@@ -8,5 +8,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=7-0:0:0
 
-Rscript 1.simulate_Yvalues_basedonGeno.R $1
-#Rscript 3.glm_association.R $1
+#conda activate tftwas_coloc
+Rscript 1.simulate_Yvalues_basedonGeno.R $1 $2
+Rscript 3.glm_association.R $1
+Rscript y_null.glm_association.R $1
