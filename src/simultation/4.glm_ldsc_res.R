@@ -2,12 +2,13 @@ library(data.table)
 library(dplyr)
 library(renv)
 renv::restore() 
+args <- commandArgs(trailingOnly=TRUE)
 
 #set parameters
 beta1="1"
-snps="10000"
-h2="0.1"
-wk="../../data"
+h2=args[1]
+snps=args[2]
+wk="/data/sbcs/GuoLab/backup/liq17/CRC_TF_TWAS_zhishan2024/NC_revision_OceanCode/v2_NC_revision/"
 setwd(wk)
 
 #load sim_y files
@@ -45,8 +46,7 @@ format_ldsc <- function(beta1) {
     idx <- which(Cates == paste0(sim_y_track, "L2_0"))
     z=line_df[idx,2]/line_df[idx,3]
     p_=0
-    if(z<0){ p_ <- pnorm(z)
-    }else{p_ <- 1 - pnorm(z)}
+	p_ <- 2 * (1 - pnorm(abs(z)))
     ldsc_res[count,]=c(beta1, as.character(sim_y_track), line_df[idx,2], line_df[idx,3], z, p_)
     count=count+1
   }

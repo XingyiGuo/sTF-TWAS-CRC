@@ -26,8 +26,7 @@ format_ldsc <- function(snps) {
 		  print(Coefs)
 		  print(Coefs_se)
 		  z=Coefs/Coefs_se
-		  p_=0
-		  if(z<0){ p_ <- pnorm(z)}else{p_ <- 1 - pnorm(z)}
+		  p_ <- 2 * (1 - pnorm(abs(z)))
 		  ldsc_res[count,]=c(beta1, as.character(sim_y_track), Coefs, Coefs_se, z, p_)
 		}
     }
